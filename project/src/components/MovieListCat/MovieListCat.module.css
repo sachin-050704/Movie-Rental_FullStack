@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mov2box{
+    width: 100%;
+    height: 100%;
+}
+
+.mov2box1{
+    width: 100%;
+    height: 280px;
+    background-color: white;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mov2box .mov2p{
+    transform: translateY(-180px);
+    transition: all 0.3s;
+}
+
+.mov2box:hover .mov2p{
+    transform: translateY(0);
+}
+
+.mov2box .mov2p1{
+    padding: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+
+.mov2box .mov2p1 .mov2c{
+    font-size: 18px;
+    color: white;
+}
+
+.mov2box .movlistp:hover{
+    color: #871ABB;
+}

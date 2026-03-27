@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.head1 {
+    display: flex;
+    align-items: center;
+}
+
+.head1 .real1{
+    position: relative;
+    border: none;
+}
+
+.head1 .real1 .headbtn {
+    padding: 10px 20px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.head1 .real1 .btntext {
+    width: 200px;
+    background-color: white;
+    border: none;
+    padding: 15px;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    /* display: none; */
+    /* transition: all 0.3s; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.head1 .btntext h5,
+.btntext p {
+    padding: 0;
+    margin: 0;
+}
+
+.head1 .real1:hover .btntext {
+    /* display: block;
+    transition: all 0.3s; */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.head1 .real1 .btntext .btntextp{
+    padding: 5px 0;
+    transition: all 0.5s ease;
+}
+
+.head1 .real1 .btntext .btntextp:hover{
+    color: #871ABB;
+    font-size: 18px;
+}
+
+.head1 .headicon {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.head1 .real1:hover+.headicon {
+    transform: rotate(-180deg);
+    transition: all 0.3s;
+}
+
+
+.head2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.head2 li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.headsearch{
+    position: relative;
+}
+
+.headsearch .headsearchl{
+    width: 100%;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+.head3 {
+    display: flex;
+    align-items: center;
+}
+
+.head3 span {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.bell {
+    position: relative;
+}
+
+.bell .belldot {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    color: red;
+    font-size: 12px;
+}
+
+.head2 .headli {
+    position: relative;
+}
+
+.head2 .headli .litext {
+    width: 200px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 30%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.head2 .headli li {
+    margin: 0 25px;
+    transition: all 0.5s;
+}
+
+.head2 .headli .litext .headlip p {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.head2 .headli .litext .headlip p:hover{
+    color: #8919B6;
+}
+
+.head2 .headli:hover .litext {
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+
+.head2 li:hover {
+    color: #8919B6;
+}
+
+.headbutton {
+    display: none;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 23px;
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%)
+}
+
+.btn1 button {
+    font-weight: 500;
+}
+
+.btn1 span {
+    font-size: 10px;
+    color: red;
+}
+
+.header .open {
+    transform: translateX(0);
+}
+
+ .toghead {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .toghead button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #8919B6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+ .togpara {
+    padding: 40px 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+ .togp1 .togbox1 {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+ .togp1 .togbox1 span {
+    color: #8919B6;
+}
+
+ .togp1 .togbox1 p {
+    padding: 0 10px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+ .togicon {
+    display: flex;
+}
+
+ .togicon .togbox2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+ .togicon .togbox2:hover {
+    color: white;
+    background-color: #8919B6;
+}
+
+ .togp2 {
+    display: none;
+}
+
+.dropdown {
+  transition: transform 0.4s ease;
+}
+
+:global(.ps-submenu-root.ps-open) .dropdown {
+  transform: rotate(45deg);
+}
+
+:global(.ps-submenu-expand-icon) {
+    display: none !important;
+}
+
+.aside1{
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .head2 {
+        display: none;
+    }
+
+    .headbutton {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .togp1 .togcon {
+        padding-top: 30px;
+    }
+
+    .togp2 {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .headbutton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .real1,.headicon {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .aside1{
+        font-size: 15px;
+    }
+}

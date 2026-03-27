@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home1 {
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    transition: all 1s ease;
+}
+
+.home1 h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.home1 .h1icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.home1 .h1icon p {
+    margin: 0;
+    padding: 0 30px 0 10px;
+}
+
+.home1 .h1icon .k8 {
+    padding: 1px 8px;
+    border-radius: 5px;
+    background-color: #8919B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home1 .h1p {
+    width: 45%;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 150%;
+    padding: 25px 0;
+}
+
+.btn1 {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0 10px;
+    color: #871ABB;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btn1 button {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn1 span {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.btn1:hover {
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    color: white;
+}
+
+.textContent {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .home1 {
+        height: 50vh;
+        padding: 20px 30px;
+        font-size: 22px;
+        height: 90vh;
+    }
+
+    .home1 h1 {
+        font-size: 20px;
+    }
+
+    .home1 .h1p {
+        width: 100%;
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .home1 {
+        padding: 10px 20px;
+        height: 80vh;
+    }
+
+    .home1 h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .home1 .h1icon p {
+        padding: 0 20px 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .home1 {
+        padding: 20px;
+        height: 85vh;
+    }
+
+    .btn1 {
+        width: 100px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .btn1 button {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .btn1 span {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}

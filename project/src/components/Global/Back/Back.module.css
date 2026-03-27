@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 800px){
+    .back{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .back{
+        height: 30vh;
+    }
+
+    .backh1{
+        display: none;
+    }
+}

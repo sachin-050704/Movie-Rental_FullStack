@@ -1,0 +1,12 @@
+
+project/node_modules/
+project/.env
+
+
+movieDB/__pycache__/
+movieDB/db.sqlite3
+*.pyc
+
+
+.env
+.DS_Store

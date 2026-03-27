@@ -1,0 +1,29 @@
+.btn1{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0 10px;
+    color: #871ABB;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btn1 button{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn1 span{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.btn1:hover{
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    color: white;
+    border: none;
+}

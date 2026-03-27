@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tvshow2box {
+    margin: 0 90px;
+}
+
+.tvshow2 {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: white;
+    padding: 10px;
+}
+
+
+.tvshow2text {
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.tvshow2text .tvshow2p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .tvshow2box {
+        margin: 0 50px;
+    }
+
+    .tvshow2text .tvshow2p {
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .tvshow2box {
+        margin: 0 20px;
+    }
+
+    .tvshow2text .tvshow2p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.line1{
+    padding: 20px 90px 0 90px;
+}
+
+.home4{
+    padding: 40px 90px;
+    background-color: black;
+    color: white;
+}
+
+.home4 .h6b1{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.home4 .h6b1 p{
+    margin: 0;
+    padding: 0;
+}
+
+.home4 .h6b1 h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 58px;
+}
+
+.h2p{
+    display: flex;
+    margin: 0;
+}
+
+.h2p p{
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fulloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.content1 {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+  overflow-y: auto;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.content1 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .home4{
+        flex-direction: column;
+    }
+
+    .home4 .h6b1{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .home4 .h6b1 h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home4{
+        padding: 40px 20px;
+    }
+
+    .line1{
+        padding: 20px;
+    }
+}

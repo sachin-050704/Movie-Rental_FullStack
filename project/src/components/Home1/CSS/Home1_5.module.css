@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home1_5 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 40px 90px;
+    position: relative;
+}
+
+.home1_5 .side_text{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-text-stroke-width: 2px;
+    background: transparent;
+    -webkit-text-stroke-color: rgb(189, 13, 189);
+    font-family: "Syne", sans-serif;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    -webkit-text-fill-color: transparent;
+    line-height: 110%;
+    opacity: 0.32;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.home1_5box {
+    width: 95%;
+    height: 95%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+    z-index: 999;
+}
+
+.home1_5 .home1_5box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px 1000px 1000px 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+.home1_5 .home1_5box:hover img{
+    border-radius: 10px;
+}
+
+.home1_5 .home1_5box .home1_5ext{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(192, 76, 132, 0.7);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home1_5 .home1_5box:hover .home1_5ext{
+    opacity: 1;
+}
+
+
+
+
+.btn1{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 18px;
+    background-color: white;
+    margin: 0 10px;
+    color: #871ABB;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    transform: translateY(-500px);
+}
+
+.btn1 button{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn1 span{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.btn1:hover{
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    color: white;
+}
+
+.home1_5 .home1_5box:hover .home1_5ext .btn1{
+    transform: translateY(0);
+}
+
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: -70px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.nextArrow {
+  right: 0;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.prevArrow {
+  right: 60px;
+  color: white;
+  background: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+}

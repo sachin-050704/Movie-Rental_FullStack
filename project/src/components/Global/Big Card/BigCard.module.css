@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bigcard{
+    width: 100%;
+    height: 100%;
+    background-color: #142222;
+    color: white;
+    margin: 25px 0;
+}
+
+.bigcard h1{
+    font-size: 25px;
+}
+
+.bigcard .bigcardimg{
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bigcard .bigcardimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.bigcard .bigcardimg1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bigcard .bigcardimg1 h3{
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 15px;
+    transition: all 1s ease;
+}
+
+.bigcard .bigcardimg1 h3:hover{
+    background: linear-gradient(90deg, rgb(168, 13, 101) 0%, rgb(135, 26, 187) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    background-color: transparent !important;
+    /* transition: all 0.5s ease; */
+}
+
+.bigcard .bigcardimg1 p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.btn1{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    border-radius: 25px;
+    background-color: transparent;
+    margin: 0 10px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn1 button{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.btn1 span{
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.btn1:hover{
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    color: white;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.bigcard .cardIcon{
+    display: flex;
+    align-items: center;
+}
+
+.bigcard .cardIcon p{
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.bigcard .shareit{
+    display: flex;
+    align-items: center;
+}
+
+.bigcard .share{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.bigcard .share p{
+    margin: 0;
+    padding: 0 15px;
+}
+
+.bigcard .socialIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.bigcard .socialIcons span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.bigcard .socialIcons span:hover {
+  background: #a020f0;
+  color: white;
+}
+
+
+.bigcard .bigcardimg3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bigcard .bigcardimg3 h1{
+    font-size: 50px;
+    font-weight: 800;
+    transform: rotate(90deg);
+    background: linear-gradient(90deg, rgb(168, 13, 101) 0%, rgb(135, 26, 187) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    background-color: transparent !important;
+}
+
+.bigcard .cardline{
+    width: 1px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .bigcard{
+        padding: 30px;
+    }
+
+    .bigcard .bigcardimg1{
+        padding-top: 20px;
+    }
+
+    .bigcard .cardline{
+        display: none;
+    }
+
+    .bigcard .bigcardimg3{
+        display: block;
+    }
+
+    .bigcard .bigcardimg3 h1{
+        transform: rotate(0);
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .bigcard .shareit{
+        display: block;
+    }
+
+    .bigcard .shareit .viewbtn{
+        width: 50%;
+    }
+    
+}

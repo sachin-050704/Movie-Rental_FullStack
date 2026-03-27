@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home2 {
+  background-color: black;
+  padding: 30px 90px;
+}
+
+
+.home2 .h2box {
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+  color: white;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.h2box .h2img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.home2 .h2box .h2p {
+  display: flex;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.home2 .h2box .h2p p {
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: -70px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.nextArrow {
+  right: 0;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.prevArrow {
+  right: 60px;
+  color: white;
+  background: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+}
+
+.h2box .h2hover {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translateY(-280px);
+  transition: all 0.3s ease;
+}
+
+.h2box:hover .h2hover {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.fulloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.content1 {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+  overflow-y: auto;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.content1 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .home2 {
+    padding: 30px 50px;
+  }
+
+  .nextArrow,
+  .prevArrow {
+    width: 30px;
+    height: 30px;
+    top: -35px;
+    left: 40%;
+  }
+
+  .prevArrow {
+    left: 80%;
+    top: -10px;
+  }
+
+  .nextArrow {
+    left: 90%;
+    top: -10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .home2 {
+    padding: 30px;
+  }
+}

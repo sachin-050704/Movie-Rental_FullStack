@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.line1{
+    padding: 20px 90px 0 90px;
+}
+
+.home7{
+    padding: 50px 90px;
+    background-color: black;
+    color: white;
+}
+
+.slideWrap {
+  padding: 0 12px;
+}
+
+.card {
+  background: #000;
+  border: 1px solid #1f1f1f;
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+}
+
+.stars {
+  color: #a020f0;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user h4 {
+  color: white;
+  margin: 0;
+}
+
+.user span {
+  color: gray;
+  font-size: 14px;
+}
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: -70px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.nextArrow {
+  right: 0;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.prevArrow {
+  right: 60px;
+  color: white;
+  background: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+.movdetail2{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: white;
+    margin: 10px 0;
+}
+
+.movdetail2 .movdet2{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 0;
+}
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: -70px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.nextArrow {
+  right: 0;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.prevArrow {
+  right: 60px;
+  color: white;
+  background: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+}
+
+
+
+.movdett{
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movdet3{
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movdet3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.movdet4{
+    width: 70%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.addrev{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.addrev .adrev{
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.addrev .adrev:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px){
+
+    .nextArrow,.prevArrow{
+        width: 30px;
+        height: 30px;
+        top: -35px;
+        left: 40%;
+    }
+
+    .prevArrow{
+        left: 40%;
+    }
+
+    .nextArrow{
+        left: 50%;
+    }
+
+    .revform{
+      width: 90%;
+    }
+
+    .revform h2{
+      font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .home7{
+        padding: 40px 20px;
+    }
+
+    .line1{
+        padding: 20px;
+    }
+}

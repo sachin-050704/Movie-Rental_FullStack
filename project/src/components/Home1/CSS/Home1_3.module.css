@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.animate {
+    background-color: black;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.anim {
+    display: flex;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+}
+
+.anim1 {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #2ADDC8;
+    transition: all 0.4s ease-in-out;
+}
+
+.anim1:hover {
+    background: linear-gradient(90deg, rgb(168, 13, 101), rgb(135, 26, 187));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 0;
+}
+
+.anim:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

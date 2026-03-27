@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.line1 {
+    padding: 20px 90px 0 90px;
+}
+
+.home8 {
+    padding: 40px 90px;
+    background-color: black;
+    color: white;
+}
+
+.home8 .h8box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+}
+
+.home8 h3 {
+    padding-top: 10px;
+}
+
+.home8 .h8icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.home8 .h8icon p {
+    margin: 0;
+    padding: 0 30px 0 10px;
+}
+
+.home8 .h8read {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.home8 .h8read p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home8 .h8arrow {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+}
+
+.home8 .h8img {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .home8 {
+        padding: 40px 20px;
+    }
+
+    .line1 {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home8 .h8read p {
+        font-size: 15px;
+    }
+
+    .home8 .h8icon {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,18 @@
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 23px;
+    background-image: linear-gradient(to right, #A80D65 0%, #871ABB 50%, #A80D65 100%);
+    margin: 0 10px;
+}
+
+.btn1 button{
+    font-weight: 500;
+}
+
+.btn1 span{
+    font-size: 13px;
+    color: white;
+}

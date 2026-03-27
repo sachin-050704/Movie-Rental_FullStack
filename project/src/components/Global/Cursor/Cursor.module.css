@@ -1,0 +1,42 @@
+body {
+  cursor: none;
+}
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #7c3aed;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.7);
+}
+
+.arrdot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #c353ef;
+
+  transform: scale(0.3);
+  transition: transform 0.4s ease;
+}
+
+.arrow {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  transition: transform 0.4s ease, font-size 0.4s ease;
+}
+
+.grow .arrdot {
+  transform: scale(1);
+  background-color: rgba(#c353ef, #c353ef, #c353ef, 0.2);
+}
+
+

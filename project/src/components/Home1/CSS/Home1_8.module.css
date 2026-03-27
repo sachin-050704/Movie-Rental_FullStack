@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.animate {
+    background-color: black;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.anim {
+    display: flex;
+    width: max-content;
+    animation: scroll 50s linear infinite;
+}
+
+.anim1 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 80px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(90deg, #A80D65 0%, #871ABB 82.95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.anim1:hover {
+    background: linear-gradient(90deg, rgb(168, 13, 101), rgb(135, 26, 187));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 0;
+}
+
+.anim:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
