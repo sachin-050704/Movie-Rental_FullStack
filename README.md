@@ -1,6 +1,4 @@
-# Movie-Rental_FullStack
-
-# 🎬 Movie Rental App
+# Movie-Rental_FullStack 
 
 A full-stack web application built using React and Django.
 
